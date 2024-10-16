@@ -1,1 +1,1 @@
-# system-integration-dbt-blackfridat
+# system-integration-dbt-blackfriday
