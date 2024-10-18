@@ -29,3 +29,19 @@ Happy modeling!
 [0m22:09:42.685522 [debug] [MainThread]: Command `dbt init` succeeded at 22:09:42.682644 after 200.65 seconds
 [0m22:09:42.687737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe48925b490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe468447460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe468447700>]}
 [0m22:09:42.690418 [debug] [MainThread]: Flushing usage events
+[0m08:17:00.250245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd15185c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1523c6430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1523c6250>]}
+
+
+============================== 08:17:00.255427 | 6cf20ff8-774b-423b-b2fc-846e0a6f8a4c ==============================
+[0m08:17:00.255427 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m08:17:00.255953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/dellacorte/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m08:17:00.256574 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dellacorte/py-projects/data-engineering/system-integration-dbt-blackfriday/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:17:00.259111 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.08557329, "process_user_time": 0.879627, "process_kernel_time": 0.386448, "process_mem_max_rss": "88141824", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:17:00.260000 [debug] [MainThread]: Command `dbt seed` failed at 08:17:00.259678 after 0.09 seconds
+[0m08:17:00.260411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd15185c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1523b91f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1523b94f0>]}
+[0m08:17:00.260752 [debug] [MainThread]: Flushing usage events
+[0m08:17:01.062409 [debug] [MainThread]: An error was encountered while trying to flush usage events
