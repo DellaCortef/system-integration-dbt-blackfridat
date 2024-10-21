@@ -5,7 +5,7 @@ sources:
     schema: public   # Substitua pelo nome do schema
 
     tables:
-      - name: typeform_response
+      - name: typeform_responses
         description: "Responses from Typeform surveys."
         columns:
           - name: "submitted_at"
