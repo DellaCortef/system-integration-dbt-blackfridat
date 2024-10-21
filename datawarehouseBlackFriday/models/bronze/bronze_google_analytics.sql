@@ -1,7 +1,7 @@
 -- Required table CTE
 WITH google_analytics as (
     SELECT * 
-    FROM {{ source('public', 'google_analytics_zapflow')}}
+    FROM {{ source('datajourneydatapipeline_9nhn', 'google_analytics_zapflow')}}
 )
 
 
