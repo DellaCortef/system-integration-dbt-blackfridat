@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: dwblackfriday  # Substitua pelo nome do banco de dados
+  - name: della-postgre  # Substitua pelo nome do banco de dados
     schema: public   # Substitua pelo nome do schema
 
     tables:
