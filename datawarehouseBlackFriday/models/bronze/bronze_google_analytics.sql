@@ -1,3 +1,10 @@
+-- Configuration so that transformations are created in view
+{ 
+    config(
+        materialized="view"
+    )
+}
+
 -- Required table CTE
 WITH google_analytics as (
     SELECT * 
