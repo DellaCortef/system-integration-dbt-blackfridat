@@ -17,3 +17,4 @@ SELECT
     CAST("engagedSessions"        AS INTEGER) AS "engaged_sessions",
     CAST("averageSessionDuration" AS INTEGER) AS "average_session_duration",
     CAST("screenPageViews"        AS INTEGER) AS "screen_page_views"
+FROM google_analytics
