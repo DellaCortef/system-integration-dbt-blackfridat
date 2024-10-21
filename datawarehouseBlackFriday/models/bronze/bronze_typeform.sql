@@ -1,9 +1,8 @@
 -- Configuration so that transformations are created in view
-{ 
-    config(
-        materialized="view"
-    )
-}
+{{ config(
+    materialized="view",
+    schema="public"
+)}}
 
 -- Required table CTE
 WITH typeform as (
