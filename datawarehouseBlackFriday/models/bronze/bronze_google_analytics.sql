@@ -5,5 +5,5 @@ WITH google_analytics as (
 )
 
 
--- Consultation on the need for CTE
+-- Creating View from my table CTE
 SELECT * FROM google_analytics
