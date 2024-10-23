@@ -13,3 +13,18 @@ Runtime Error
 [0m20:19:44.575149 [debug] [MainThread]: Command `dbt docs generate` failed at 20:19:44.574797 after 0.09 seconds
 [0m20:19:44.575603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58915b4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58aa1ce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58aa1cbb0>]}
 [0m20:19:44.576000 [debug] [MainThread]: Flushing usage events
+[0m20:41:59.405510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa912c3550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa921dc250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa921dcb50>]}
+
+
+============================== 20:41:59.410726 | b526b907-9d45-419e-9c41-aacf8e759aaa ==============================
+[0m20:41:59.410726 [info ] [MainThread]: Running with dbt=1.8.6
+[0m20:41:59.411258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/dellacorte/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True'}
+[0m20:41:59.411842 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dellacorte/py-projects/data-engineering/system-integration-dbt-blackfriday/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:41:59.414419 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.08470788, "process_user_time": 0.853447, "process_kernel_time": 0.122743, "process_mem_max_rss": "86466560", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m20:41:59.415522 [debug] [MainThread]: Command `dbt docs generate` failed at 20:41:59.415144 after 0.09 seconds
+[0m20:41:59.415980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa912c3550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa921dcdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa921dcb50>]}
+[0m20:41:59.416373 [debug] [MainThread]: Flushing usage events
