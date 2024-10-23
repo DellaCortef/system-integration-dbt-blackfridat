@@ -45,3 +45,35 @@ Runtime Error
 [0m08:17:00.260411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd15185c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1523b91f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1523b94f0>]}
 [0m08:17:00.260752 [debug] [MainThread]: Flushing usage events
 [0m08:17:01.062409 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:02:28.831301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4e146b340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4e1ffb280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4e1ffb0a0>]}
+
+
+============================== 20:02:28.837097 | 1e560bf2-7aa5-4976-9cc2-932489d6dc2d ==============================
+[0m20:02:28.837097 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m20:02:28.837644 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/dellacorte/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True'}
+[0m20:02:28.838225 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dellacorte/py-projects/data-engineering/system-integration-dbt-blackfriday/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:02:28.841670 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.10099067, "process_user_time": 0.895652, "process_kernel_time": 0.165062, "process_mem_max_rss": "88940544", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m20:02:28.842659 [debug] [MainThread]: Command `dbt docs generate` failed at 20:02:28.842341 after 0.10 seconds
+[0m20:02:28.843069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4e146b340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4e1ff43a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4e1ff46d0>]}
+[0m20:02:28.843437 [debug] [MainThread]: Flushing usage events
+[0m20:02:29.815425 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:04:42.150151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabc9733250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabca2c8cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabca2c8eb0>]}
+
+
+============================== 20:04:42.155444 | 401e7ab8-2cec-4fe9-98ea-519bcd6f7401 ==============================
+[0m20:04:42.155444 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m20:04:42.155964 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/dellacorte/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:04:42.156508 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dellacorte/py-projects/data-engineering/system-integration-dbt-blackfriday/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:04:42.159116 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.07911525, "process_user_time": 0.888153, "process_kernel_time": 0.124812, "process_mem_max_rss": "89587712", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m20:04:42.160277 [debug] [MainThread]: Command `dbt docs generate` failed at 20:04:42.159900 after 0.08 seconds
+[0m20:04:42.160747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabc9733250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabca2bb2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabca2bb610>]}
+[0m20:04:42.161139 [debug] [MainThread]: Flushing usage events
+[0m20:04:42.805824 [debug] [MainThread]: An error was encountered while trying to flush usage events
