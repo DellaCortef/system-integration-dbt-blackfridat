@@ -1,0 +1,15 @@
+[0m20:19:44.565355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58915b4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58aa1c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58aa1cbb0>]}
+
+
+============================== 20:19:44.570540 | c6a431d8-a0d8-49a6-bb9e-67437417f2d9 ==============================
+[0m20:19:44.570540 [info ] [MainThread]: Running with dbt=1.8.6
+[0m20:19:44.571040 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/dellacorte/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:19:44.571610 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dellacorte/py-projects/data-engineering/system-integration-dbt-blackfriday/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:19:44.574083 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_wall_clock_time": 0.08978275, "process_user_time": 0.829398, "process_kernel_time": 0.137129, "process_mem_max_rss": "86216704", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m20:19:44.575149 [debug] [MainThread]: Command `dbt docs generate` failed at 20:19:44.574797 after 0.09 seconds
+[0m20:19:44.575603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58915b4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58aa1ce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58aa1cbb0>]}
+[0m20:19:44.576000 [debug] [MainThread]: Flushing usage events
